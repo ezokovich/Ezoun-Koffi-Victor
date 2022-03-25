@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> formulaire</title>
+</head>
+<body>
+    <h1>
+        Formulaire DWWM
+    </h1>
+<form action="">
+    <div>
+        <label> Nom </label><br>
+        <input type="text"   name="nom" placeholder="Entrez votre nom" required>  
+    </div>
+    <div>
+      <label> Email  </label><br>
+      <input type="text"   name="nom" placeholder="Entrez votre email"required>  
+  </div>
+  <div>
+      <label>Indiquez votre satisfation au cours de 1 à 10 </label><br>
+      <input type="number"   name="nom" placeholder="numéro de 1 à 10 " required>  
+  </div>
+  <div>
+
+      <label> Qui est votre Coach ?  </label> <br>
+      <select   name="sujet" id="sujet" required >  
+          <option   disabled selected hidden> choisi ton coach </option>
+          <option> birante</option>
+          <option> Mamadout </option>
+          <option>  Malick </option>
+      </select>
+
+  </div>
+  <div>
+      <label> A quel moment avez-vous cour? </label> <br>
+      <blockquote>
+          <input type="radio"   name="m-s-m"> Matin <br>
+          <input type="radio"   name="m-s-m">  Après-midi <br>
+          <input type="radio"   name="m-s-m"> soir  <br>
+
+      </blockquote>
+
+  </div>
+  <label> quels outils aviez-vous rencontré jusque là? <br> (selectionnez tout ce qui s'applique) </label> <br>
+  <blockquote>  
+        <input type="checkbox"   name="h-s"> HTML  <br>
+        <input type="checkbox"   name="h-s"> CSS  <br>
+        <input type="checkbox"   name="h-s"> JavaScipt <br>
+        <input type="checkbox"   name="h-s"> Editeur de texte  <br>
+        <input type="checkbox"  name="h-s"> Ligne de commande <br>
+  </blockquote>
+   <label> Decrivez votre expérience jusque là </label><br>
+   <textarea id="message" name="message" placeholder="Decrivez votre experience ici...." required></textarea><br>
+   <div>
+   <input type="submit">
+  </div>
+</form>
+</body>
+</html>
