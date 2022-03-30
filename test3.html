@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> formulaire</title>
+    <link rel="stylesheet" href="mon css.css">
+</head>
+<body >  
+    <p> <h1> Formulaire DWWM </h1></p>
+<form>  
+    <div class="ezok">
+       <div class="ez1">Nom</div>   
+        <div class="ez2"><input type="text"   name="nom" placeholder="Entrez votre nom" required> </div> 
+    </div>
+    <div class="ezok">
+     <div class="ez1">  Email </div>  
+     <div class="ez2"> <input type="text"   name="nom" placeholder="Entrez votre email"required>  </div>
+  </div>
+  <div  class="ezok">
+      <div class="ez1"> Indiquez votre satisfation au <br> cours de 1 à 10</div>  
+      <div class="ez2"><input type="number"   name="nom" placeholder="numéro de 1 à 10 " required> </div>
+  </div>
+  <div  class="ezok">
+       <div class="ez1"> Qui est votre Coach ? </div>
+     <div class="ez2"> <select   name="sujet" id="sujet" required >  
+          <option   disabled selected hidden> choisi ton coach </option>
+          <option> birante</option>
+          <option> Mamadout </option>
+          <option>  Malick </option>
+      </select>
+    </div>
+
+  </div>
+  <div  class="ezok">
+       <div class="ez1"> A quel moment avez-vous cour?</div>
+       <div class="ez2">
+          <input type="radio"   name="m-s-m"> Matin <br>
+          <input type="radio"   name="m-s-m">  Après-midi <br>
+          <input type="radio"   name="m-s-m"> soir  <br>
+        </div>
+  </div>
+   <div  class="ezok">
+   <div class="ez1"> quels outils aviez-vous rencontré jusque là? <br> (selectionnez tout ce qui s'applique)</div>  
+       <div class="ez2"> <input type="checkbox"   name="h-s"> HTML  <br>
+        <input type="checkbox"   name="h-s"> CSS  <br>
+        <input type="checkbox"   name="h-s"> JavaScipt <br>
+        <input type="checkbox"   name="h-s"> Editeur de texte  <br>
+        <input type="checkbox"  name="h-s"> Ligne de commande <br>
+    </div>
+    </div>
+    <div class="ezok">
+  <div class="ez1"> Decrivez votre expérience jusque là </div> 
+   <div class="ez2"> <textarea id="message" name="message" placeholder="Decrivez votre experience ici...." required></textarea></div>
+  </div>
+  <div id="in"> <input type="button" value="envoyer" id="in"></div>
+</form>
+</body>
+</html>
