@@ -1,0 +1,8 @@
+ body{ background: #A9D7E9;  }
+form{ background:  #F3F3F3; display: block; width: 500px; ; margin: auto; border-radius: 10px;}
+ p{ text-transform: capitalize; font-size: 50px ; text-align: center; }
+.ezok{  display: flex; padding: 10px; }
+.ez1 , .ez2{ width: 50%; padding: 10px;}
+.ez1{text-align: right; margin-left: -22px;}
+#in{ margin: auto; width: 80px; height: 30px; background-color:  #6BA2CE; color: white; border:2px solid #6BA2CE  ;}
+h1{text-align: center;}

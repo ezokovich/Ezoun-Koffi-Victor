@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> formulaire</title>
+    <link rel="stylesheet" href="/Users/imacg1/Desktop/ezok BAGAGE/ezoun/form ezok /form2/ formulaire2.css">
+</head>
+<body >  
+    <p> <h1> Formulaire DWWM </h1></p>
+<form action="#">  
+    <div class="ezok">
+       <div class="ez1">Nom</div>   
+        <div class="ez2"><input type="text" id="Nom"  name="nom" placeholder="Entrez votre nom" required> </div> 
+       
+       
+    </div>
+    <div class="ezok">
+     <div class="ez1">  Email </div> 
+     <div class="ez2"> <input type="text" id="Mail"  name="nom" placeholder="Entrez votre email"required>  </div>
+  </div>
+  <div  class="ezok">
+      <div class="ez1"> Indiquez votre satisfation au <br> cours de 1 à 10</div>  
+      <div class="ez2"><input type="number"  class="satisfation" name="nom" placeholder="numéro de 1 à 10 " required> </div>
+  </div>
+  <div  class="ezok">
+       <div class="ez1"> Qui est votre Coach ? </div>
+     <div class="ez2"> <select   class="Coach" name="sujet" id="sujet" required >  
+          <option   disabled selected hidden> choisi ton coach </option>
+          <option> birante</option>
+          <option> Mamadout </option>
+          <option>  Malick </option>
+      </select>  
+    </div>  
+    </div>
+    <!-- *creer une fontion qui va s'executer une fois on click -->
+    <div id="sub" style="text-align: center;"><button onclick="funk()"  type="button" > send</button></div>
+</form>
+<div>
+<h1 id="recupEmail"></h1> 
+<h1 id="recupCoach"></h1>
+<h1 id="recupNom"></h1>
+<h1 id="recupSatisfation"></h1>
+</div>
+
+    <!--   La logique est simple 
+        on  cree une var  de recuperation des element 
+        une autre pour transiter l'affichage
+        et enfin lier les deux var et les afficher par innerHtml
+           
+    -->
+<script>
+    function funk(){
+         let Nom = document.getElementById("Nom");
+         let  recupNom= document.getElementById("recupNom");
+          recupNom.innerText = Nom.value;
+          
+
+          let Mail = document.getElementById("Mail");
+         let  recupEmail= document.getElementById("recupEmail");
+          recupEmail.innerText = Mail.value;
+           
+
+          let satisfation = document.querySelector(".satisfation");;
+         let  recupSatisfation= document.getElementById("recupSatisfation");
+          recupSatisfation.innerHTML = satisfation.value;
+
+          let Coach = document.querySelector(".Coach");;
+         let  recupCoach= document.getElementById("recupCoach");
+         recupCoach.innerHTML =  Coach.value;
+
+      }
+     
+  </script>
+</body>
+</html>
+  
